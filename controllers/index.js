@@ -1,47 +1,47 @@
-const express=require('express')
-var router=express.Router()
-var client=require('../db/db.js')
+const express = require('express')
+var router = express.Router()
+var client = require('../db/db.js')
 
 
-router.get('/',(req,res)=>{
+router.get('/', (req, res) => {
   //res.redirect('/list')
-  res.render("elements/index", { viewTitle: 'Pharma Life' });
+
 })
 
 router.get('/about', (req, res) => {
   //res.redirect('/list')
-  res.render("elements/about", { viewTitle: 'about' });
+
 })
 
 router.get('/cart', (req, res) => {
   //res.redirect('/list')
-  res.render("elements/cart", { viewTitle: 'My cart' });
+
 })
 
 
 router.get('/checkout', (req, res) => {
   //res.redirect('/list')
-  res.render("elements/checkout", { viewTitle: 'Checkout' });
+
 })
 
-router.get('/contact',(req,res)=>{
+router.get('/contact', (req, res) => {
   //res.redirect('/list')
-  res.render("elements/contact", { viewTitle: 'Contact' });
+
 })
 
 router.get('/store', (req, res) => {
   //res.redirect('/list')
-  res.render("elements/store", { viewTitle: 'store' });
+
 })
 
 router.get('/thankyou', (req, res) => {
   //res.redirect('/list')
-  res.render("elements/thankyou", { viewTitle: 'thankyou' });
+
 })
 
 router.get('/view', (req, res) => {
   //res.redirect('/list')
-  res.render("elements/view", { viewTitle: 'View' });
+
 })
 
 /*
@@ -124,4 +124,4 @@ function addEmployee(req,res)
     });;
 }
 */
-module.exports=router;
+module.exports = router;
